@@ -1,0 +1,7 @@
+
+REPO="https://istiq.my.id/istiqwaman/"
+
+
+
+wget -q -O /etc/default/dropbear "${REPO}cfg/dropbear.conf"
+chmod +x /etc/default/dropbear

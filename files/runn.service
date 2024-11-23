@@ -1,0 +1,12 @@
+[Unit]
+Description=Automatically
+After=network.target
+
+[Service]
+Type=simple
+ExecStartPre=-/usr/bin/mkdir -p /var/run/v2ray
+ExecStart=/usr/bin/chown www-data:www-data /var/run/v2ray
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
