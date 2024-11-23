@@ -1,5 +1,0 @@
-REPO="https//istiq.my.id/istiqwaman/"
-
-
-
-wget -O /root/.config/rclone/rclone.conf "${REPO}cfg/rclone.conf"
